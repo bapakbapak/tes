@@ -51,7 +51,7 @@ async def cmd_list(event):
             string = "<b>{count} Commands found in plugin {input_str}:</b>\n\n"
             catcount = 0
             for i in CMD_LIST[input_str]:
-                string += f"  ◆  <code>{i}</code>"
+                string += f"  ♥  <code>{i}</code>"
                 string += "\n"
                 catcount += 1
             await event.edit(
@@ -79,7 +79,7 @@ async def cmd_list(event):
                 \n<b>Usage:</b> <code>.help</code> plugin name\n\n"
             catcount = 0
             for i in sorted(CMD_LIST):
-                string += "◆ " + f"<code>{str(i)}</code>"
+                string += "♥ " + f"<code>{str(i)}</code>"
                 string += "   "
                 catcount += 1
             await event.edit(string.format(count=catcount), parse_mode="HTML")
@@ -123,7 +123,7 @@ async def info(event):
             string = "<b>{count} Commands found in plugin {input_str}:</b>\n\n"
             catcount = 0
             for i in SUDO_LIST[input_str]:
-                string += f"  ◆  <code>{i}</code>"
+                string += f"  ♥  <code>{i}</code>"
                 string += "\n"
                 catcount += 1
             await event.reply(
@@ -140,7 +140,7 @@ async def info(event):
             \n<b>Usage:</b> <code>.help</code> plugin name\n\n"
         catcount = 0
         for i in sorted(SUDO_LIST):
-            string += "◆ " + f"<code>{str(i)}</code>"
+            string += "♥ " + f"<code>{str(i)}</code>"
             string += "   "
             catcount += 1
         await event.reply(string.format(count=catcount), parse_mode="HTML")
@@ -164,7 +164,7 @@ async def info(event):
             \n<b>Usage : </b><code>.info</code> <plugin name>\n\n"
         catcount = 0
         for i in sorted(CMD_HELP):
-            string += "◆ " + f"<code>{str(i)}</code>"
+            string += "♥ " + f"<code>{str(i)}</code>"
             string += "   "
             catcount += 1
         if event.sender_id in Config.SUDO_USERS:
@@ -214,14 +214,14 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "help": "__**PLUGIN NAME :** Help__\
-    \n\n📌** CMD ➥** `.help` <plugin name>\
-    \n**USAGE   ➥  **Get commands of a specific plugin.\
-    \n\n📌** CMD ➥** `.info` <plugin name>\
-    \n**USAGE   ➥  **To get commands and usage of a specific plugin.\
-    \n\n📌** CMD ➥** `.dc`\
-    \n**USAGE   ➥  **To get info list of telegram data centres.\
-    \n\n📌** CMD ➥** `.setinline true` <or> `.setinline false`\
-    \n**USAGE   ➥  **To enable or disable inline mode of help menu."
+        "help": "__**Nama Plugin :** Help__\
+    \n\n✅** CMD ➥** `.help` <plugin name>\
+    \n**Fungsi   ➥  **dapatkan perintah dari plugin tertentu.\
+    \n\n✅** CMD ➥** `.info` <plugin name>\
+    \n**Fungsi   ➥  **dapatkan perintah dan fungsi dari plugin tertentu.\
+    \n\n✅** CMD ➥** `.dc`\
+    \n**Fungsi   ➥  **Untuk mendapatkan daftar info pusat data telegram.\
+    \n\n✅** CMD ➥** `.setinline true` <or> `.setinline false`\
+    \n**Fungsi   ➥  **Untuk mengaktifkan atau menonaktifkan mode inline."
     }
 )
