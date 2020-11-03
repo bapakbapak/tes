@@ -26,15 +26,14 @@ async def amireallyalive(alive):
         reply_to_id = await alive.get_reply_message()
     if CAT_IMG:
         cat_caption = f"<b>{JISAN}</b>\n\n"
-        cat_caption += f"<b>• [ 👤 ] ➥ My Master : {hmention}</b>\n"
-        cat_caption += f"<b>• [ 🕒 ] ➥ Uptime :</b> <code>{uptime}</code>\n"
-        cat_caption += f"<b>• [ 🐍 ] ➥ Python :</b> <code>{python_version()}</code>\n"
-        cat_caption += f"<b>●・○・●・○・●・○・●・○・●・○・●・○・●・○・●\n"
+        cat_caption += f"<b>● »» [ 👤 ] ➥ My Master : {hmention}</b>\n"
+        cat_caption += f"<b>● »» [ 🕒 ] ➥ Uptime :</b> <code>{uptime}</code>\n"
+        cat_caption += f"<b>● »» [ 🐍 ] ➥ Python :</b> <code>{python_version()}</code>\n"      
         cat_caption += (
-            f"<b>• [ ⚙️ ] ➥ Telethon :</b> <code>{version.__version__}</code>\n"
+            f"<b>● »» [ ⚙️ ] ➥ Telethon :</b> <code>{version.__version__}</code>\n"
         )
-        cat_caption += f"<b>• [ 🤖 ] ➥ Bot :</b> <code>{catversion}</code>\n"
-        cat_caption += f"<b>• [ 💻 ] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
+        cat_caption += f"<b>● »» [ 🤖 ] ➥ Bot :</b> <code>{catversion}</code>\n"
+        cat_caption += f"<b>● »» [ 💻 ] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
         cat_caption += "   | <a href = https://github.com/Akarata/AkaProject><b>Akarata_Project</b></a> | "
 
         await alive.client.send_file(
@@ -51,12 +50,12 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"<b>{JISAN}</b>\n\n"
-            f"<b>• [👤] ➥ My Master : {hmention}</b>\n"
-            f"<b>• [🕒] ➥ Uptime :</b> <code>{uptime}</code>\n"
-            f"<b>• [🐍] ➥ Python :</b> <code>{python_version()}</code>\n"
-            f"<b>• [⚙️] ➥ Telethon :</b> <code>{version.__version__}</code>\n"
-            f"<b>• [🤖] ➥ Bot :</b> <code>{catversion}</code>\n"
-            f"<b>• [💻] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
+            f"<b>● »» [👤] ➥ My Master : {hmention}</b>\n"
+            f"<b>● »» [🕒] ➥ Uptime :</b> <code>{uptime}</code>\n"
+            f"<b>● »» [🐍] ➥ Python :</b> <code>{python_version()}</code>\n"
+            f"<b>● »» [⚙️] ➥ Telethon :</b> <code>{version.__version__}</code>\n"
+            f"<b>● »» [🤖] ➥ Bot :</b> <code>{catversion}</code>\n"
+            f"<b>● »» [💻] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
             "    | <a href = https://github.com/Akarata/https://github.com/Akarata/AkaProject><b>Akarata_Project</b></a> | ",
             parse_mode="html",
         )
