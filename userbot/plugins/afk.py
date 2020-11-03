@@ -62,7 +62,7 @@ async def set_not_afk(event):
             await event.client.send_message(
                 BOTLOG_CHATID,
                 "#AFKFALSE \n`Set AFK mode to False\n"
-                + "Aku telah kembali! Tidak lama Offline.\nOffline Sejak for "
+                + "Aku telah kembali! Tidak lama Offline.\nOffline Sejak "
                 + endtime
                 + "`",
             )
@@ -107,7 +107,7 @@ async def on_afk(event):
     if USERAFK_ON and not (await event.get_sender()).bot:
         msg = None
         message_to_reply = (
-            f"**Aku Sedang Offline**\n\n**Offline Beberapa :** `{endtime}`\n**Karena : **{reason}"
+            f"**Aku Sedang Offline**\n\n**Offline Beberapa :** `{endtime}` yang lalu :3 \n**Karena : **{reason}"
             if reason
             else f"**Aku Sedang Offline**\n\n**Offline Beberapa :** `{endtime}`\n**Karena : **`Sedang Sibuk`"
         )
