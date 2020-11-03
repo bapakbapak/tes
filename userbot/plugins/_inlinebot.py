@@ -235,7 +235,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                         caption=plugin_name,
                     )
         else:
-            reply_pop_up_alert = "Iri bilang boss \n\nNikal, Deploy sendiri lah anjim..."
+            reply_pop_up_alert = (
+                "Iri bilang boss \n\nNikal, Deploy sendiri lah anjim..."
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
