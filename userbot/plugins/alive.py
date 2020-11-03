@@ -28,12 +28,14 @@ async def amireallyalive(alive):
         cat_caption = f"<b>{JISAN}</b>\n\n"
         cat_caption += f"<b>● »» [ 👤 ] ➥ My Master : {hmention}</b>\n"
         cat_caption += f"<b>● »» [ 🕒 ] ➥ Uptime :</b> <code>{uptime}</code>\n"
-        cat_caption += f"<b>● »» [ 🐍 ] ➥ Python :</b> <code>{python_version()}</code>\n"      
+        cat_caption += f"<b>● »» [ 🐍 ] ➥ Python :</b> <code>{python_version()}</code>\n"
         cat_caption += (
             f"<b>● »» [ ⚙️ ] ➥ Telethon :</b> <code>{version.__version__}</code>\n"
         )
         cat_caption += f"<b>● »» [ 🤖 ] ➥ Bot :</b> <code>{catversion}</code>\n"
-        cat_caption += f"<b>● »» [ 💻 ] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
+        cat_caption += (
+            f"<b>● »» [ 💻 ] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
+        )
         cat_caption += "   | <a href = https://github.com/Akarata/AkaProject><b>Akarata_Project</b></a> | "
 
         await alive.client.send_file(
