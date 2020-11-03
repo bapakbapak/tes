@@ -26,12 +26,12 @@ async def amireallyalive(alive):
         reply_to_id = await alive.get_reply_message()
     if CAT_IMG:
         cat_caption = f"<b>{JISAN}</b>\n\n"
-        cat_caption += f"• [👤] **My Master** : {hmention}</b>\n"
-        cat_caption += f"• [🕒] **Uptime** :</b> <code>{uptime}</code>\n"
-        cat_caption += f"• [🐍] **Python** :</b> <code>{python_version()}</code>\n"
-        cat_caption += f"• [⚙️] **Telethon** :</b> <code>{version.__version__}</code>\n"
-        cat_caption += f"• [🤖] **Bot** :</b> <code>{catversion}</code>\n"
-        cat_caption += f"• [💻] **Database** :</b> <code>{check_sgnirts}</code>\n\n"
+        cat_caption += f"• [ 👤 ] ➥ My Master : {hmention}</b>\n"
+        cat_caption += f"• [ 🕒 ] ➥ Uptime :</b> <code>{uptime}</code>\n"
+        cat_caption += f"• [ 🐍 ] ➥ Python :</b> <code>{python_version()}</code>\n"
+        cat_caption += f"• [ ⚙️ ] ➥ Telethon :</b> <code>{version.__version__}</code>\n"
+        cat_caption += f"• [ 🤖 ] ➥ Bot :</b> <code>{catversion}</code>\n"
+        cat_caption += f"• [ 💻 ] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
         cat_caption += "   | <a href = https://github.com/Akarata/AkaProject><b>Akarata_Project</b></a> | "
 
         await alive.client.send_file(
