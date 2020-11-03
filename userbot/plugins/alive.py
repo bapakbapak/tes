@@ -26,7 +26,6 @@ async def amireallyalive(alive):
         reply_to_id = await alive.get_reply_message()
     if CAT_IMG:
 
-      
         cat_caption += f"• [👤] **My Master** : {hmention}</b>\n"
         cat_caption += f"• [🕒] **Uptime** :</b> <code>{uptime}</code>\n"
         cat_caption += f"• [🐍] **Python** :</b> <code>{python_version()}</code>\n"
