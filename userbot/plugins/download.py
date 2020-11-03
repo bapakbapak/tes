@@ -45,7 +45,7 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             await mone.edit(
-                f"<b><i>➥ Downloaded in {ms} seconds.</i></b>\n<b><i>➥ Downloaded to :-</i></b> <code>{downloaded_file_name}</code>\n<b><i>➥ Downloaded by :- {hmention}</i></b>",
+                f"<b><i>➥ Diunduh dalam {ms} detik.</i></b>\n<b><i>➥ Diunduh ke :-</i></b> <code>{downloaded_file_name}</code>\n<b><i>➥ Diunduh oleh :- {hmention}</i></b>",
                 parse_mode="html",
             )
     elif input_str:
@@ -76,7 +76,7 @@ async def _(event):
             )
             estimated_total_time = downloader.get_eta(human=True)
             try:
-                current_message = f"trying to download\nURL: {url}\nFile Name: {file_name}\n{progress_str}\n{humanbytes(downloaded)} of {humanbytes(total_length)}\nETA: {estimated_total_time}"
+                current_message = f"Mencoba untuk mengunduh\nURL: {url}\nNama File: {file_name}\n{progress_str}\n{humanbytes(downloaded)} of {humanbytes(total_length)}\nPerkiraan waktu: {estimated_total_time}"
                 if round(diff % 10.00) == 0 and current_message != display_message:
                     await mone.edit(current_message)
                     display_message = current_message
@@ -86,7 +86,7 @@ async def _(event):
         ms = (end - start).seconds
         if downloader.isSuccessful():
             await mone.edit(
-                f"<b><i>➥ Downloaded in {ms} seconds.</i></b>\n<b><i>➥ Downloaded to :-</i></b> <code>{downloaded_file_name}</code>\n<b><i>➥ Downloaded by :- {hmention}</i></b>",
+                f"<b><i>➥ Diunduh dalam {ms} detik.</i></b>\n<b><i>➥ Diunduh ke :-</i></b> <code>{downloaded_file_name}</code>\n<b><i>➥ Diunduh oleh :- {hmention}</i></b>",
                 parse_mode="html",
             )
         else:
@@ -99,6 +99,6 @@ CMD_HELP.update(
     {
         "download": "__**PLUGIN NAME :** Download__\
 \n\n📌** CMD ➥** `.download` <link|filename> or reply to media\
-\n**USAGE   ➥  **Downloads file to the server."
+\n**USAGE   ➥  **Mengunduh file ke server."
     }
 )
