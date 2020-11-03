@@ -12,7 +12,7 @@ JISAN = (
     if Config.CUSTOM_ALIVE_TEXT
     else "❤ I'M ALIVE MASTER ❤"
 )
-EMOJI = str(Config.CUSTOM_ALIVE_EMOJI) if Config.CUSTOM_ALIVE_EMOJI else "➥"
+
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
@@ -28,18 +28,18 @@ async def amireallyalive(alive):
     if CAT_IMG:
 
         cat_caption = f"<b>{JISAN}</b>\n\n"
-        cat_caption += f"<b>{EMOJI} My Master : {hmention}</b>\n"
-        cat_caption += f"<b>{EMOJI} Uptime :</b> <code>{uptime}</code>\n"
+        cat_caption += f"• 👤 `My Master : {hmention}</b>\n"
+        cat_caption += f"• 🕒 `Uptime :</b> <code>{uptime}</code>\n"
         cat_caption += (
-            f"<b>{EMOJI} Python Version :</b> <code>{python_version()}</code>\n"
+            f"• 🐍 `Python :</b> <code>{python_version()}</code>\n"
         )
         cat_caption += (
-            f"<b>{EMOJI} Telethon Version :</b> <code>{version.__version__}</code>\n"
+            f"• ⚙️ `Telethon :</b> <code>{version.__version__}</code>\n"
         )
         cat_caption += (
-            f"<b>{EMOJI} AkaProject Version :</b> <code>{catversion}</code>\n"
+            f"• 🤖 `Bot:</b> <code>{catversion}</code>\n"
         )
-        cat_caption += f"<b>{EMOJI} Database :</b> <code>{check_sgnirts}</code>\n\n"
+        cat_caption += f"• 💻 `Database :</b> <code>{check_sgnirts}</code>\n\n"
         cat_caption += "   | <a href = https://github.com/Akarata/AkaProject><b>Akarata_Project</b></a> | "
 
         await alive.client.send_file(
@@ -56,13 +56,13 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"<b>{JISAN}</b>\n\n"
-            f"<b>{EMOJI} 👤My Master : {hmention}</b>\n"
-            f"<b>{EMOJI} 🕒Uptime :</b> <code>{uptime}</code>\n"
-            f"<b>{EMOJI} 🐍Python  Version :</b> <code>{python_version()}</code>\n"
-            f"<b>{EMOJI} ⚙️Telethon  Version :</b> <code>{version.__version__}</code>\n"
-            f"<b>{EMOJI} 🤖AkaProject  Version :</b> <code>{catversion}</code>\n"
-            f"<b>{EMOJI} 💻Database :</b> <code>{check_sgnirts}</code>\n\n"
-            "    | <a href = https://github.com/Akarata/Akarata_Project><b>Akarata_Project</b></a> | ",
+            f"• 👤 `My Master : {hmention}</b>\n"
+            f"• 🕒 `Uptime :</b> <code>{uptime}</code>\n"
+            f"• 🐍 `Python :</b> <code>{python_version()}</code>\n"
+            f"• ⚙️ `Telethon :</b> <code>{version.__version__}</code>\n"
+            f"• 🤖 `Bot :</b> <code>{catversion}</code>\n"
+            f"• 💻 `Database :</b> <code>{check_sgnirts}</code>\n\n"
+            "    | <a href = https://github.com/Akarata/https://github.com/Akarata/AkaProject><b>Akarata_Project</b></a> | ",
             parse_mode="html",
         )
 
