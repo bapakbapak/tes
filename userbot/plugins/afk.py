@@ -107,7 +107,7 @@ async def on_afk(event):
     if USERAFK_ON and not (await event.get_sender()).bot:
         msg = None
         message_to_reply = (
-            f"**Aku Sedang Offline**\n\n**Offline Beberapa :** `{endtime}` yang lalu :3 \n**Karena : **{reason}"
+            f"**Aku Sedang Offline**\n\n**Offline Beberapa :** `{endtime}` **yang lalu** \n**Karena : **{reason}"
             if reason
             else f"**Aku Sedang Offline**\n\n**Offline Beberapa :** `{endtime}`\n**Karena : **`Sedang Sibuk`"
         )
