@@ -206,7 +206,7 @@ async def upstream(event):
         return
     if changelog == "" and not force_update:
         await event.edit(
-            "\n`Akarata_Project is`  **up-to-date**  `with`  "
+            "\n`Akarata_Project  sudah`  **terupdate**  `oleh`  "
             f"**{UPSTREAM_REPO_BRANCH}**\n"
         )
         return repo.__del__()
@@ -222,7 +222,7 @@ async def upstream(event):
             "`Force-Syncing to latest stable userbot code, please wait...`"
         )
     if conf == "now":
-        await event.edit("`Updating userbot, please wait....`")
+        await event.edit("`Sedang mengupdate AkaProject, tunggu beberapa saat....`")
         await update(event, repo, ups_rem, ac_br)
     return
 
@@ -267,17 +267,17 @@ async def upstream(event):
 
 CMD_HELP.update(
     {
-        "updater": "__**PLUGIN NAME :** Updater__\
-        \n\n📌** CMD ➥** `.update`\
-        \n**Usage :** Checks if the main userbot repository has any updates\
-        \nand shows a changelog if so.\
-        \n\n📌** CMD ➥** `.update now`\
-        \n**USAGE   ➥  **Update your userbot,\
-        \nif there are any updates in your userbot repository.if you restart these goes back to last time when you deployed\
-        \n\n📌** CMD ➥** `.update deploy`\
-        \n**USAGE   ➥  **Deploy your userbot.So even you restart it doesnt go back to previous version\
-        \n\n📌** CMD ➥** `.goodcat`\
-        \n**USAGE   ➥  **Swich to jisan's unoffical repo to official cat repo.\
+        "updater": "__**Nama Plugin :** Updater__\
+        \n\n✅** CMD ➥** `.update`\
+        \n**Digunakan :** untuk mengecek  jika ada userbot ada update terbaru\
+        \ndan menunjukan changelog.\
+        \n\n✅** CMD ➥** `.update now`\
+        \n**Digunakan   ➥  **Untuk mengupdate userbot,\
+        \njika ada pembaruan dalam repositori userbot kamu. jika kamu memulai ulang, ini kembali ke waktu terakhir saat kamu menerapkan\
+        \n\n✅** CMD ➥** `.update deploy`\
+        \n**Digunakan   ➥  **untuk menDeploy userbot kamu\
+        \n\n✅** CMD ➥** `.goodcat`\
+        \n**Digunakan   ➥  **Swich to jisan's unoffical repo to official cat repo.\
         \nThis will triggered deploy always, even no updates."
     }
 )
