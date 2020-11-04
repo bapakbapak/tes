@@ -155,11 +155,11 @@ async def dyno_usage(dyno):
     await asyncio.sleep(1.5)
     return await dyno.edit(
         "**Dyno Usage**:\n\n"
-        f" -> `Dyno usage for`  **{Var.HEROKU_APP_NAME}**:\n"
+        f" -> `Dyno yang di gunakan oleh`  **{Var.HEROKU_APP_NAME}**:\n"
         f"     •  `{AppHours}`**h**  `{AppMinutes}`**m**  "
         f"**|**  [`{AppPercentage}`**%**]"
         "\n\n"
-        " -> `Dyno hours quota remaining this month`:\n"
+        " -> `Kuota dyno yang tersisa bulan ini`:\n"
         f"     •  `{hours}`**h**  `{minutes}`**m**  "
         f"**|**  [`{percentage}`**%**]"
     )
@@ -203,17 +203,17 @@ def prettyjson(obj, indent=2, maxlinelength=80):
 CMD_HELP.update(
     {
         "heroku": "__**PLUGIN NAME :** Heroku__\
-  \n\n📌** CMD ➥** `.usage`\
-  \n**USAGE   ➥  **Check your heroku dyno hours status.\
-  \n\n📌** CMD ➥** `.set var` <NEW VAR> <VALUE>\
-  \n**USAGE   ➥  **Add new variable or update existing value variable\
-  \n\n📌** CMD ➥** `.get var` or `.get var <VAR>`\
-  \n**USAGE   ➥  **Get your existing varibles & valus of that\
-  \n\n📌** CMD ➥** `.del var` <VAR>\
-  \n**USAGE   ➥  **Delete existing variable\
-  \n\n📌** CMD ➥** `.herokulogs`\
-  \n**USAGE   ➥  **Sends you recent 100 lines of logs in heroku\
-  \n\n\n**!!! WARNING !!!, After adding or deleting variable the bot will restarted**\
-  \n**Don't use .get var in public groups.This returns all of your private information, please be cautious...**"
-    }
+  \n\n✅** CMD ➥** `.usage`\
+  \n**Digunakan   ➥  **Mengecek penggunaan dyno bulan ini.\
+  \n\n✅** CMD ➥** `.set var` <NEW VAR> <VALUE>\
+  \n**Digunakan   ➥  **Tambahkan variabel baru atau perbarui variabel nilai yang ada\
+  \n\n✅** CMD ➥** `.get var` or `.get var <VAR>`\
+  \n**Digunakan   ➥  **Dapatkan variabel dan nilai yang ada\
+  \n\n✅** CMD ➥** `.del var` <VAR>\
+  \n**Digunakan   ➥  **Delete existing variable\
+  \n\n✅** CMD ➥** `.herokulogs`\
+  \n**Digunakan   ➥  **Mengirimi Anda 100 baris log terbaru di heroku\
+  \n\n\n!!! PERINGATAN !!!, Setelah menambah atau menghapus variabel, bot akan dimulai ulang** \
+   \n **Jangan gunakan .get var dalam grup publik. Ini mengembalikan semua informasi pribadi Anda, harap berhati-hati ...** "
+     }
 )
