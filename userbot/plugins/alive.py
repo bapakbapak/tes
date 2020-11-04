@@ -57,7 +57,7 @@ async def amireallyalive(alive):
             f"<b>● »» [🐍] ➥ Python :</b> <code>{python_version()}</code>\n"
             f"<b>● »» [⚙️] ➥ Telethon :</b> <code>{version.__version__}</code>\n"
             f"<b>● »» [🤖] ➥ Bot :</b> <code>{catversion}</code>\n"
-            f"<b>● »» [💻] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
+            f"<b>● »» [💻] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n",
         )
 
 
