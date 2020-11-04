@@ -101,7 +101,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "[Klik disini](https://github.com/Akarata/AkaProject) untuk membuka Akarata_Project :3"
+        "[Klik disini](https://github.com/Akarata/AkaProject) untuk membuka Akarata_Project "
     )
 
 
