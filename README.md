@@ -7,7 +7,7 @@ Get APP ID and API HASH from [HERE](https://my.telegram.org) and BOT TOKEN from 
 
 [![Get string session](https://repl.it/badge/github/sandy1709/sandeep1709)](https://generatestringsession.sandeep1709.repl.run/)
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Akarata/AkaProject)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bapakbapak/tes)
 <p align="center">
   
 ### The Normal Way
