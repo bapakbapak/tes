@@ -1,4 +1,4 @@
-# Akarata_Project Userbot
+# Zame_Zame Project
 
 [![ logo](https://telegra.ph/file/bc460a2288d76afb92d7e.jpg)](https://heroku.com/deploy)
 
