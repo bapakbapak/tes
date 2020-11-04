@@ -236,7 +236,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     )
         else:
             reply_pop_up_alert = (
-                "Iri bilang boss \n\nNikal, Deploy sendiri lah anjim..."
+                "Iri bilang boss!!! \n\nKalo mau Deploy sendiri lah anjim..."
             )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
