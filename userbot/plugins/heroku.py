@@ -215,5 +215,5 @@ CMD_HELP.update(
   \n**Digunakan   ➥  **Mengirimi Anda 100 baris log terbaru di heroku\
   \n\n\n!!! PERINGATAN !!!, Setelah menambah atau menghapus variabel, bot akan dimulai ulang** \
    \n **Jangan gunakan .get var dalam grup publik. Ini mengembalikan semua informasi pribadi Anda, harap berhati-hati ...** "
-     }
+    }
 )
