@@ -36,7 +36,6 @@ async def amireallyalive(alive):
         cat_caption += (
             f"<b>● »» [ 💻 ] ➥ Database :</b> <code>{check_sgnirts}</code>\n\n"
         )
-        cat_caption += "   | <a href = https://github.com/Akarata/AkaProject><b>Akarata_Project</b></a> | "
 
         await alive.client.send_file(
             alive.chat_id,
